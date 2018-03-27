@@ -6,4 +6,5 @@
 
  - [vim](./.vimrc)
  - [zsh](./.zshrc)
+ - [pip](./.pip/pip.conf)
 
