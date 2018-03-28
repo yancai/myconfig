@@ -61,6 +61,10 @@ ZSH_THEME="ys"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   git
+  docker
+  docker-compose
+  extract
+  z
 )
 
 source $ZSH/oh-my-zsh.sh
