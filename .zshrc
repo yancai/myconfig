@@ -106,12 +106,27 @@ alias rm='rm -i'
 alias cp='cp -i'
 alias mv='mv -i'
 
+# 代理设置
+alias unset_proxy="unset http_proxy;unset https_proxy"
+alias set_proxy="export http_proxy=http://pc.dev:8688; export https_proxy=http://pc.dev:8688/; export ALL_PROXY=socks5://pc.dev:51837"
 
+# virtualenv环境变量配置
 export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/Devel
 source /usr/local/bin/virtualenvwrapper.sh
 
-export JAVA_HOME=/usr/java/jdk1.8.0_77
+# Java环境变量配置
+export JAVA_HOME=/usr/java/jdk1.8.0_202
 export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar
 export PATH=$PATH:$JAVA_HOME/bin
 
+# Node.js环境变量
+export NODE_HOME=/opt/node
+export PATH=$PATH:$NODE_HOME/bin
+export PATH=$PATH:$HOME/.yarn/bin
+
+# Go环境变量配置
+export GOHOME=/usr/local/go
+export PATH=$PATH:$GOHOME/bin
+export GOPATH=/home/yancai/go
+export PATH=$PATH:$GOPATH/bin
