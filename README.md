@@ -22,6 +22,8 @@
 <details>
 <summary>点击查看安装方式</summary>
 
+**注意：**需要提前安装[`git`](https://git-scm.com/)
+
 Unix
 ```sh
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
